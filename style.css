@@ -6,8 +6,25 @@ body {
 #header {
     display: flex;
     border: black solid 2px;
-    height: 100px;
-    justify-content: center;
+    height: 70px;
+    justify-content: left;
     width: 100%;
+}
+
+
+#member {
+    display: flex;
+    height: 70px;
+    justify-content: right;
     margin: 0%;
+    width: 83%;
+}
+
+#MemberText {
+    display: flex;
+    height: 60px;
+    border: black solid 2px;
+    align-self: center;
+    align-items: center;
+    border-radius: 20px;
 }
