@@ -1,37 +1,275 @@
 body {
-    font-family: "Noto Sans", sans-serif;
     margin: 0;
 }
 
+#show {
+    float: right;
+    margin: 18px 15px 0 10px;
+    display:none;
+}
 
-#header {
 
-    height: 50px;
-    width: 100%;
-    background-color: white;
-    margin-top: 0;
-    padding-top: 5px;
+
+  .header {
+    max-width: 100%;
+    min-width: 100%;
     padding-bottom: 10px;
+    margin: auto;
     display: flex;
-
-}
-#left {
-    font-size: 10px;
-    margin-left: 10px;
-    display: flex;
-
-}
-#right{
-    font-size: 10px;
-    margin-left: 50%;
-    display: flex;
-}
-#right img{
-    width:70px;
-    height: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 1000px;
+    user-select: none;
+    -webkit-user-drag: none;
     
+
 }
-#memb {
+.header .hb {
+    width: 99%;
+    height: 70px;
+
+
+}
+.header .left {
+    float: left;
+    padding-top: 13px;
+    display: flex;
+
+}
+.header .left h1 {
+    padding: 0;
+
+}
+.header .left h1 a {
+    font-size: 23px;
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.header .hb .right .memb{
+    border: solid rgb(32, 32, 32) 10px;
+    border-radius:50px;
+    background-color: rgb(32, 32, 32);
+    color:white;
+    font-size:15px; 
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    margin: 18px 15px 0 10px;
+}
+.header .hb .right .memb:hover{
+    border: solid black 10px;
     background-color: black;
 }
+.header .hb .left .logo{
+    margin-left: 22px;
+    margin-top: 3px;
+    margin-right: 15px;
 
+}
+.header .hb .left .GitHub:hover {
+    text-decoration: underline;
+}
+.header .hb .left .message{
+    font-size: 18px ;
+    margin-left: 100px;
+    margin-top: 15px;
+    text-decoration: none;
+    background: none;
+    border: none; 
+
+}
+.header .hb .left .GitHub{
+    font-size: 23px;
+    margin: 12px 0 0 10px;
+}
+@media only screen and (min-width: 1000px) {
+    .header .hb .left .message{
+    font-size: 30px ;
+    margin-left: 500px;
+    margin-top: 15px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    
+
+}
+.header .hb .left .GitHub{
+    font-size: 26px;
+    margin: 20px 0 0 10px;
+}
+.header .hb .left .logo{
+    margin-left: 22px;
+    margin-top: 11px;
+    margin-right: 15px;
+}
+.header .hb .right .memb{
+    border: solid rgb(32, 32, 32) 10px;
+    border-radius:50px;
+    background-color: rgb(32, 32, 32);
+    color:white;
+    font-size:15px; 
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    margin: 30px 15px 0 10px;
+}
+}
+@media only screen and (min-width: 900px) {
+    .header .hb .left .message{
+    font-size: 20px ;
+    margin-left: 200px;
+    margin-top: 15px;
+    text-decoration: none;
+    background: none;
+    border: none;
+
+}
+.header .hb .left .GitHub{
+    font-size: 26px;
+    margin: 20px 0 0 10px;
+}
+.header .hb .left .logo{
+    margin-left: 22px;
+    margin-top: 11px;
+    margin-right: 15px;
+}
+.header .hb .right .memb{
+    border: solid rgb(32, 32, 32) 10px;
+    border-radius:50px;
+    background-color: rgb(32, 32, 32);
+    color:white;
+    font-size:15px; 
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    margin: 30px 15px 0 10px;
+}
+}
+@media only screen and (min-width: 800px)and(max-width: 900px) {
+    .header .hb .left .message{
+    font-size: 20px ;
+    margin-left: 200px;
+    margin-top: 15px;
+    text-decoration: none;
+    background: none;
+    border: none;
+
+}
+.header .hb .left .GitHub{
+    font-size: 26px;
+    margin: 20px 0 0 10px;
+}
+.header .hb .left .logo{
+    margin-left: 22px;
+    margin-top: 11px;
+    margin-right: 15px;
+}
+.header .hb .right .memb{
+    border: solid rgb(32, 32, 32) 10px;
+    border-radius:50px;
+    background-color: rgb(32, 32, 32);
+    color:white;
+    font-size:15px; 
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    margin: 30px 15px 0 10px;
+}
+}
+@media only screen and (min-width: 1500px) {
+    .header .hb .left .message{
+    font-size: 25px ;
+    margin-left: 500px;
+    margin-top: 15px;
+    text-decoration: none;
+    background: none;
+    border: none;
+
+}
+.header .hb .left .GitHub{
+    font-size: 26px;
+    margin: 20px 0 0 10px;
+}
+.header .hb .left .logo{
+    margin-left: 22px;
+    margin-top: 11px;
+    margin-right: 15px;
+}
+.header .hb .right .memb{
+    border: solid rgb(32, 32, 32) 10px;
+    border-radius:50px;
+    background-color: rgb(32, 32, 32);
+    color:white;
+    font-size:15px; 
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    margin: 30px 15px 0 10px;
+}
+}
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+    .header .hb .left .message{
+    font-size: 18px ;
+    margin-left: 150px;
+    margin-top: 15px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    display: none;
+
+}
+.header .hb .left .GitHub{
+    font-size: 26px;
+    margin: 20px 0 0 10px;
+}
+.header .hb .left .logo{
+    margin-left: 22px;
+    margin-top: 11px;
+    margin-right: 15px;
+}
+.header .hb .right .memb{
+    border: solid rgb(32, 32, 32) 10px;
+    border-radius:50px;
+    background-color: rgb(32, 32, 32);
+    color:white;
+    font-size:12px; 
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    margin: 30px 15px 0 10px;
+}
+}
+@media only screen and (max-width: 500px) {
+    .header .hb .left .message{
+    font-size: 13px ;
+    margin-left: 50px;
+    margin-top: 15px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    display: none;
+
+}
+.header .hb .left .GitHub{
+    font-size: 13px;
+    margin: 20px 0 0 5px;
+}
+.header .hb .left .logo{
+    margin-left: 22px;
+    margin-top: 11px;
+    margin-right: 15px;
+    width: 30;
+}
+.header .hb .right .memb{
+    border: solid rgb(32, 32, 32) 10px;
+    border-radius:50px;
+    background-color: rgb(32, 32, 32);
+    color:white;
+    font-size:12px; 
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    margin: 30px 15px 0 10px;
+}
+}
