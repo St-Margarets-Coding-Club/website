@@ -1,5 +1,10 @@
 body {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
+    color: #000;
 }
 
 #show {
@@ -239,6 +244,71 @@ body {
     float: right;
     margin: 30px 15px 0 10px;
 }
+
+h2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.members-items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.members-items {
+    padding: 1rem;
+    text-align: center;
+}
+
+.Kanson-Chu {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.Loginov-Timofei {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.Hayden-Lo {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.Megrez-Law {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.Mr-Papa {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btns {
+    gap: 1rem;
+    width: 25;
+    height: 25;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
+    object-fit: cover;
 }
 @media only screen and (max-width: 500px) {
     .header .hb .left .message{
@@ -304,3 +374,4 @@ a {
 }
 
 }
+
