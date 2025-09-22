@@ -272,4 +272,35 @@ body {
     float: right;
     margin: 30px 15px 0 10px;
 }
+    body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-logo h1 {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20rem;
+}
+
+a {
+    font-size: small;
+}
+
+.cta-button {
+    color: rgb(0, 85, 255);
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    text-decoration: underline;
+}
+
 }
