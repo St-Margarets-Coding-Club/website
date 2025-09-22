@@ -22,7 +22,7 @@ body {
     margin: auto;
     display: flex;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 1000px;
+    margin-bottom: 100px;
     user-select: none;
     -webkit-user-drag: none;
     
@@ -374,4 +374,5 @@ a {
 }
 
 }
+
 
