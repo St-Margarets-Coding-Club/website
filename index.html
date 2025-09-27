@@ -1,141 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Club</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Club</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class = "header">
-    <div class = "hb">
-        
-        <li class = "left">
-            <a href="../index.html" class="logo">
-                <img src = "images/logo.png" alt = "logo" style = "width:50px;height:45px;pointer-events: none;">
-            </a>
-            <h1 class="GitHub">
-                <a href = "https://github.com/St-Margarets-Coding-Club/website">GitHub</a>
-            </h1>
-            <button id="btn"  class="message">
-                Welcome mate! Press me!
-            </button>
-            
-        </li>
-        <script>
-            let x = document.getElementById("btn");
-
-            if(x){
-                x.addEventListener('click', function() {
-                    x.style.display = 'none'; 
-                });
-
-            }
-
-        </script>
-        <div class = "right">
-            
-            <img id="show"src = "images/bars-solid-full.svg" alt = "menu" style = "width:50px;height:45px">
-            
-           
-            <a href= "#members-section" class = "memb" >Members section</a>
-        </div>
+    <header class="header">
+    <div class="left">
+        <a href="index.html" class="logo-text">{>_}</a>
     </div>
-</div>
-<div id = "sandwich-menu">
-    <h1>HI WORLD</h1>
-</div>
-    
-    <section id="hero" class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <h1>St Margarets Coding Club</h1>
-                <p>We are a Hong Kong Secondary School Coding Club</p>
-                <a href="https://github.com/St-Margarets-Coding-Club" class="cta-button" target="_blank">Check us out</a>
-            </div>
-            <div class="hero-logo">
-                <h1>{>_}</h1>
-            </div>
-        </div>
-    </section>
 
-    <h2 class="subtitle">Our Members</h2>
-        <div class="members-items">
-            <div class="Kanson-Chu">
-                <div class="image">
-                    <img src="images/zorocubing_icon.png" alt="zorocubing logo" width="35" height="35">
-                </div>
-                <h3>
-                     Kanson Chu
-                </h3>
-                    <p>Leader</p>
-                <div class="btns">
-                    <a href="https://github.com/zorocubing/" class="btn" target="_blank"><img src="images/github_icon.png" alt="GitHub icon" width="25" height="25"></a>
-                </div>
-                </div>
-
-            <div class="Loginov-Timofei">
-                <div class="image">
-                    <img src="images/TookyLooky_icon.png" alt="TookyLooky logo" width="35" height="35">
-                </div>
-                <h3>
-                     Loginov Timofei
-                </h3>
-                    <p>Vice Leader</p>
-                <div class="btns">
-                    <a href="https://github.com/TookyLooky/" class="btn" target="_blank"><img src="images/github_icon.png" alt="GitHub icon" width="25" height="25"></a>
-                </div>
-                </div>
-
-            <div class="Hayden-Lo">
-                <div class="image">
-                    <img src="images/Krystaria_icon.png" alt="Krystaria logo" width="35" height="35">
-                </div>
-                <h3>
-                     Hayden Lo
-                </h3>
-                    <p>Member</p>
-                <div class="btns">
-                    <a href="https://github.com/Krystaria/" class="btn" target="_blank"><img src="images/github_icon.png" alt="GitHub icon" width="25" height="25"></a>
-                </div>
-                </div>
-
-                <div class="Megrez-Law">
-                <div class="image">
-                    <img src="images/isuckatphysics_icon.png" alt="isuckatphysics logo" width="35" height="35">
-                </div>
-                <h3>
-                     Mergez Law
-                </h3>
-                    <p>Member</p>
-                <div class="btns">
-                    <a href="https://github.com/ISuckAtPhysics/" class="btn" target="_blank"><img src="images/github_icon.png" alt="GitHub icon" width="25" height="25"></a>
-                </div>
-                </div>
-
-                <div class="Mr-Papa">
-                <div class="image">
-                    <img src="images/papapapapah_icon.png" alt="papapapapah logo" width="35" height="35">
-                </div>
-                <h3>
-                     Mr Papa
-                </h3>
-                    <p>Teacher</p>
-                <div class="btns">
-                    <a href="https://github.com/papapapapah/" class="btn" target="_blank"><img src="images/github_icon.png" alt="GitHub icon" width="25" height="25"></a>
-                </div>
-                </div>
-
-            </div>
-        </div>
+    <div class="right">
+        <h1 class="GitHub">
+            <a href="https://github.com/St-Margarets-Coding-Club/website">GitHub</a>
+        </h1>
     </div>
+    </header>
+
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1>St Margarets Coding Club</h1>
+        <p>We are a Hong Kong Secondary School Coding Club</p>
+        <a href="https://github.com/St-Margarets-Coding-Club" class="cta-button" target="_blank">Check us out</a>
+        <div class="hero-logo"><h1>{>_}</h1></div>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="subtitle">Our Members</h2>
+  <section id="members-section" class="members-items">
+    <div class="Kanson-Chu member">
+      <img src="images/zorocubing_icon.png" alt="zorocubing logo" width="35" height="35">
+      <h3>Kanson Chu</h3>
+      <p>Leader</p>
+      <div class="btns">
+        <a href="https://github.com/zorocubing/" target="_blank">
+          <img src="images/github_icon.png" alt="GitHub icon" width="25" height="25">
+        </a>
+      </div>
+    </div>
+
+    <div class="Loginov-Timofei member">
+      <img src="images/TookyLooky_icon.png" alt="TookyLooky logo" width="35" height="35">
+      <h3>Loginov Timofei</h3>
+      <p>Vice Leader</p>
+      <div class="btns">
+        <a href="https://github.com/TookyLooky/" target="_blank">
+          <img src="images/github_icon.png" alt="GitHub icon" width="25" height="25">
+        </a>
+      </div>
+    </div>
+
+    <div class="Hayden-Lo member">
+      <img src="images/Krystaria_icon.png" alt="Krystaria logo" width="35" height="35">
+      <h3>Hayden Lo</h3>
+      <p>Member</p>
+      <div class="btns">
+        <a href="https://github.com/Krystaria/" target="_blank">
+          <img src="images/github_icon.png" alt="GitHub icon" width="25" height="25">
+        </a>
+      </div>
+    </div>
+
+    <div class="Megrez-Law member">
+      <img src="images/isuckatphysics_icon.png" alt="isuckatphysics logo" width="35" height="35">
+      <h3>Megrez Law</h3>
+      <p>Member</p>
+      <div class="btns">
+        <a href="https://github.com/ISuckAtPhysics/" target="_blank">
+          <img src="images/github_icon.png" alt="GitHub icon" width="25" height="25">
+        </a>
+      </div>
+    </div>
+
+    <div class="Mr-Papa member">
+      <img src="images/papapapapah_icon.png" alt="papapapapah logo" width="35" height="35">
+      <h3>Mr Papa</h3>
+      <p>Teacher</p>
+      <div class="btns">
+        <a href="https://github.com/papapapapah/" target="_blank">
+          <img src="images/github_icon.png" alt="GitHub icon" width="25" height="25">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const btn = document.getElementById("btn");
+    if (btn) {
+      btn.addEventListener("click", () => btn.style.display = "none");
+    }
+  </script>
 </body>
-
 </html>
