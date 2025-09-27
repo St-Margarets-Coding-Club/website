@@ -1,382 +1,146 @@
 body {
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    color: #000;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  color: #000;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+/* ===== Header ===== */
+.header {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 0 auto 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header .logo-text {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: "Love Ya Like A Sister", cursive;
+  color: #000;
+  text-decoration: none;
+}
+
+.header .GitHub a {
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header .GitHub a:hover {
+  text-decoration: underline;
+}
+
+.header .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ===== Hero ===== */
+.hero-section {
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
 .hero-logo h1 {
-    font-family: "Love Ya Like A Sister", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20rem;
-}
-
-a {
-    font-size: small;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8rem;
+  margin: 0;
 }
 
 .cta-button {
-    color: rgb(0, 85, 255);
-    text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  color: rgb(0, 85, 255);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .cta-button:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-#show {
-    float: right;
-    margin: 18px 15px 0 10px;
-    display:none;
-}
-
-
-
-.header {
-    max-width: 100%;
-    min-width: 100%;
-    padding-bottom: 10px;
-    margin: auto;
-    display: flex;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 100px;
-    user-select: none;
-    -webkit-user-drag: none;
-    
-
-}
-.header .hb {
-    width: 99%;
-    height: 70px;
-
-
-}
-.header .left {
-    float: left;
-    padding-top: 13px;
-    display: flex;
-
-}
-.header .left h1 {
-    padding: 0;
-
-}
-.header .left h1 a {
-    font-size: 23px;
-    color: #333;
-    text-decoration: none;
-    font-weight: normal;
-    letter-spacing: 1px;
-}
-.header .hb .right .memb{
-    border: solid rgb(32, 32, 32) 10px;
-    border-radius:50px;
-    background-color: rgb(32, 32, 32);
-    color:white;
-    font-size:15px; 
-    text-decoration: none;
-    list-style-type: none;
-    float: right;
-    margin: 18px 15px 0 10px;
-}
-.header .hb .right .memb:hover{
-    border: solid black 10px;
-    background-color: black;
-}
-.header .hb .left .logo{
-    margin-left: 22px;
-    margin-top: 3px;
-    margin-right: 15px;
-
-}
-.header .hb .left .GitHub:hover {
-    text-decoration: underline;
-}
-.header .hb .left .message{
-    font-size: 18px ;
-    margin-left: 100px;
-    margin-top: 15px;
-    text-decoration: none;
-    background: none;
-    border: none; 
-
-}
-.header .hb .left .GitHub{
-    font-size: 23px;
-    margin: 12px 0 0 10px;
-}
-@media only screen and (min-width: 1000px) {
-    .header .hb .left .message{
-    font-size: 30px ;
-    margin-left: 500px;
-    margin-top: 15px;
-    text-decoration: none;
-    background: none;
-    border: none;
-    
-
-}
-.header .hb .left .GitHub{
-    font-size: 26px;
-    margin: 20px 0 0 10px;
-}
-.header .hb .left .logo{
-    margin-left: 22px;
-    margin-top: 11px;
-    margin-right: 15px;
-}
-.header .hb .right .memb{
-    border: solid rgb(32, 32, 32) 10px;
-    border-radius:50px;
-    background-color: rgb(32, 32, 32);
-    color:white;
-    font-size:15px; 
-    text-decoration: none;
-    list-style-type: none;
-    float: right;
-    margin: 30px 15px 0 10px;
-}
-}
-@media only screen and (min-width: 900px) {
-    .header .hb .left .message{
-    font-size: 20px ;
-    margin-left: 200px;
-    margin-top: 15px;
-    text-decoration: none;
-    background: none;
-    border: none;
-
-}
-.header .hb .left .GitHub{
-    font-size: 26px;
-    margin: 20px 0 0 10px;
-}
-.header .hb .left .logo{
-    margin-left: 22px;
-    margin-top: 11px;
-    margin-right: 15px;
-}
-.header .hb .right .memb{
-    border: solid rgb(32, 32, 32) 10px;
-    border-radius:50px;
-    background-color: rgb(32, 32, 32);
-    color:white;
-    font-size:15px; 
-    text-decoration: none;
-    list-style-type: none;
-    float: right;
-    margin: 30px 15px 0 10px;
-}
-}
-@media only screen and (min-width: 800px)and(max-width: 900px) {
-    .header .hb .left .message{
-    font-size: 20px ;
-    margin-left: 200px;
-    margin-top: 15px;
-    text-decoration: none;
-    background: none;
-    border: none;
-
-}
-.header .hb .left .GitHub{
-    font-size: 26px;
-    margin: 20px 0 0 10px;
-}
-.header .hb .left .logo{
-    margin-left: 22px;
-    margin-top: 11px;
-    margin-right: 15px;
-}
-.header .hb .right .memb{
-    border: solid rgb(32, 32, 32) 10px;
-    border-radius:50px;
-    background-color: rgb(32, 32, 32);
-    color:white;
-    font-size:15px; 
-    text-decoration: none;
-    list-style-type: none;
-    float: right;
-    margin: 30px 15px 0 10px;
-}
-}
-@media only screen and (min-width: 1500px) {
-    .header .hb .left .message{
-    font-size: 25px ;
-    margin-left: 500px;
-    margin-top: 15px;
-    text-decoration: none;
-    background: none;
-    border: none;
-
-}
-.header .hb .left .GitHub{
-    font-size: 26px;
-    margin: 20px 0 0 10px;
-}
-.header .hb .left .logo{
-    margin-left: 22px;
-    margin-top: 11px;
-    margin-right: 15px;
-}
-.header .hb .right .memb{
-    border: solid rgb(32, 32, 32) 10px;
-    border-radius:50px;
-    background-color: rgb(32, 32, 32);
-    color:white;
-    font-size:15px; 
-    text-decoration: none;
-    list-style-type: none;
-    float: right;
-    margin: 30px 15px 0 10px;
-}
-}
-@media only screen and (min-width: 500px) and (max-width: 700px) {
-    .header .hb .left .message{
-    font-size: 18px ;
-    margin-left: 150px;
-    margin-top: 15px;
-    text-decoration: none;
-    background: none;
-    border: none;
-    display: none;
-
-}
-.header .hb .left .GitHub{
-    font-size: 26px;
-    margin: 20px 0 0 10px;
-}
-.header .hb .left .logo{
-    margin-left: 22px;
-    margin-top: 11px;
-    margin-right: 15px;
-}
-.header .hb .right .memb{
-    border: solid rgb(32, 32, 32) 10px;
-    border-radius:50px;
-    background-color: rgb(32, 32, 32);
-    color:white;
-    font-size:12px; 
-    text-decoration: none;
-    list-style-type: none;
-    float: right;
-    margin: 30px 15px 0 10px;
-}
-
-h2 {
-    display: block;
-    align-items: center;
-    text-align: center;
+/* ===== Members ===== */
+.subtitle {
+  text-align: center;
+  margin: 2rem 0 1rem;
 }
 
 .members-items {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.members-items {
-    padding: 1rem;
-    text-align: center;
+.member {
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 200px;
+  max-width: 250px;
 }
 
-.Kanson-Chu {
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    padding: 1rem;
-    text-align: center;
-}
-
-.Loginov-Timofei {
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    padding: 1rem;
-    text-align: center;
-}
-
-.Hayden-Lo {
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    padding: 1rem;
-    text-align: center;
-}
-
-.Megrez-Law {
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    padding: 1rem;
-    text-align: center;
-}
-
-.Mr-Papa {
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    padding: 1rem;
-    text-align: center;
+.member img {
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .btns {
-    gap: 1rem;
-    width: 25;
-    height: 25;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
 
-img {
-    border-radius: 50%;
-    object-fit: cover;
-}
-@media only screen and (max-width: 500px) {
-    .header .hb .left .message{
-    font-size: 13px ;
+/* ===== Responsive ===== */
+@media only screen and (min-width: 1000px) {
+  .header .left .message {
+    font-size: 30px;
     margin-left: 50px;
-    margin-top: 15px;
-    text-decoration: none;
-    background: none;
-    border: none;
+  }
+  .header .left .GitHub {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header .left .message {
     display: none;
-
-}
-.header .hb .left .GitHub{
-    font-size: 13px;
-    margin: 20px 0 0 5px;
-}
-.header .hb .left .logo{
-    margin-left: 22px;
-    margin-top: 11px;
-    margin-right: 15px;
-    width: 30;
-}
-.header .hb .right .memb{
-    border: solid rgb(32, 32, 32) 10px;
-    border-radius:50px;
-    background-color: rgb(32, 32, 32);
-    color:white;
-    font-size:12px; 
-    text-decoration: none;
-    list-style-type: none;
-    float: right;
-    margin: 30px 15px 0 10px;
-}
-    body {
-    font-family: "Noto Sans", sans-serif;
+  }
+  .header .left .GitHub {
+    font-size: 20px;
+  }
+  .header .right .memb {
+    font-size: 12px;
+  }
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+@media only screen and (max-width: 500px) {
+  .header .left .GitHub {
+    font-size: 14px;
+  }
+  .hero-logo h1 {
+    font-size: 5rem;
+  }
+  .cta-button {
+    font-size: small;
+  }
 }
